@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@700&family=Montserrat:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body{font-family: 'Montserrat', sans-serif; margin: 0;}
+nav,
+header,
+main
+
+ {
+    width: 100vw;
+    padding: 0 8.33vw;
+}
+
+section video {width: 100%;}
+
+h1{
+    font-family: "Bodoni", serif;
+}
+
+
+header {
+    height: 62vh;
+    text-align: center;
+}
+
+.mostrar {
+
+    display: flex;
+    flex-direction: column;
+    position:fixed;
+    top: 19vh;
+    left: 0vw;
+    background-color: #454545;
+    width: 100vw;
+    padding: 2vw;
+
+
+
+}
+
+
+nav {
+    color: white;
+    background-color: #454545;
+    height: 19vh;
+    padding: 0 8.33vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation-name: miMovimiento;
+    animation-duration: 5s
+
+}
+
+@keyframes miMovimiento{
+
+    from {
+        background-color: #ffffff;
+
+    }
+    to {
+        background-color: #454545;
+
+    }
+}
+nav div {
+    width: 24%;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+nav a,
+nav h1,
+header h3,
+header h1 {
+
+    line-height: 125%;
+    vertical-align: top;
+    font-size: 40px;
+
+
+}
+
+
+
+header h3 {
+    font-family: 'Montserrat', sans-serif;
+    color:#454545;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 16px;
+
+}
+header h2{
+    font-family: 'Montserrat', sans-serif; 
+}
+
+main section div {
+    width: 45.83%;
+}
+section div img {
+    width: 100%;
+}
+
+main  section {
+justify-content: space-between;
+display: flex;
+flex-wrap: wrap;
+
+}
+
+
+
+a {
+    text-decoration:underline;
+}
+a:hover {
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    
+}
+
+
+header p,
+nav a,
+header a {
+    font-size: 20px;
+}
+
+nav a,
+header a {
+
+    color: white;
+
+}
+
+header a {
+    background-color:#ffffff;
+    transition: all 1s;
+    color:black
+}
+header a:hover{ 
+    background-color:#454545;
+}
+
+
+nav span {
+    display: none;
+}
+img{
+    filter: invert(0%);
+}
+img:hover{
+    filter: invert(100%);
+    transition: filter 4s;
+
+}
+
+.icon-menu,
+.icon-icono-1,
+.icon-icono-2 {
+    font-size: 6vw;
+
+}
+
+.icon-menu:hover {
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+
+
+@media(max-width:992px) {
+
+
+    nav div {
+        width: 40%;
+    }
+
+
+}
+
+
+@media (max-width: 768px) {
+
+
+    nav div {
+        display: none;
+    }
+
+    /*lo hago desaparecer*/
+
+    nav span {
+        display: inline;
+    }
+
+    /*lo vuelo a mostrar*/
+
+
+}
